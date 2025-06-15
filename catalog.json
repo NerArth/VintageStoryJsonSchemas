@@ -12,6 +12,14 @@
         "**/modinfo.json"
       ],
       "url": "https://raw.githubusercontent.com/DArkHekRoMaNT/VintageStoryJsonSchemas/refs/heads/master/assets-generated-from-code/modinfo.json"
+    },
+    {
+        "name": "patches.json",
+        "description": "",
+        "fileMatch": [
+            "**/patches/*.json"
+        ],
+        "url": "https://raw.githubusercontent.com/DArkHekRoMaNT/VintageStoryJsonSchemas/refs/heads/master/assets-generated-from-code/patches.json"
     }
   ]
 }
