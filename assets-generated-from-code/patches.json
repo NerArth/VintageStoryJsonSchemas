@@ -59,9 +59,10 @@
     },
     "EnumJsonPatchOp": {
       "type": "string",
-      "description": "",
+      "description": "JSON patching operation to be performed.\n\nReference: https://datatracker.ietf.org/doc/html/rfc6902#section-4\n\nNote: AddMerge is a non-standard patching operation.",
       "x-enumNames": [
         "Add",
+        "AddMerge",
         "Remove",
         "Replace",
         "Copy",
@@ -69,6 +70,7 @@
       ],
       "enum": [
         "add",
+        "addmerge",
         "remove",
         "replace",
         "copy",
@@ -79,16 +81,18 @@
       "type": "object",
       "properties": {
         "modid": {
-          "type": "string"
+          "type": "string",
+          "description": "The mod id (domain) of the mod this patch depends on. For example \"myexamplemod\"."
         },
         "invert": {
-          "type": "boolean"
+          "type": "boolean",
+          "description": "If true, the patch will ONLY be applied if the mod is not present. (optional)"
         }
       }
     },
     "EnumAppSide": {
       "type": "string",
-      "description": "",
+      "description": "Game parsing is not case-sensitive:\n'server' is the standard but 'Server' is valid for parsing.",
       "x-enumFlags": true,
       "x-enumNames": [
         "Server",
