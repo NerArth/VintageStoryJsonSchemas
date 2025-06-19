@@ -92,7 +92,7 @@
     },
     "EnumAppSide": {
       "type": "string",
-      "description": "Game parsing is not case-sensitive:\n'server' is the standard but 'Server' is valid for parsing.",
+      "description": "Game parsing is not case-sensitive:\ne.g.'server' is often the standard but 'Server' is valid for parsing and is what vanilla patches use.",
       "x-enumFlags": true,
       "x-enumNames": [
         "Server",
@@ -102,7 +102,10 @@
       "enum": [
         "server",
         "client",
-        "universal"
+        "universal",
+        "Server",
+        "Client",
+        "Universal"
       ]
     },
     "PatchCondition": {
