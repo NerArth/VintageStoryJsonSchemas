@@ -20,6 +20,22 @@
             "**/patches/**/*.json"
         ],
         "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets-generated-from-code/patches.json"
+    },
+    {
+        "name": "blocktypes.json",
+        "description": "",
+        "fileMatch": [
+            "**/blocktypes/**/*.json"
+        ],
+        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets-generated-from-code/blocktypes.json"
+    },
+    {
+        "name": "itemtypes.json",
+        "description": "",
+        "fileMatch": [
+            "**/itemtypes/**/*.json"
+        ],
+        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets-generated-from-code/itemtypes.json"
     }
   ]
 }
