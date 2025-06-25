@@ -1,0 +1,137 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "JsonPatch[]",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/JsonPatch"
+  },
+  "definitions": {
+    "JsonPatch": {
+      "type": "object",
+      "properties": {
+        "op": {
+          "$ref": "#/definitions/EnumJsonPatchOp"
+        },
+        "file": {
+          "type": "string"
+        },
+        "fromPath": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PatchModDependence"
+          }
+        },
+        "side": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/definitions/EnumAppSide"
+            }
+          ]
+        },
+        "condition": {
+          "$ref": "#/definitions/PatchCondition"
+        },
+        "value": {
+          "$ref": "#/definitions/JsonObject"
+        },
+        "sideType": {
+          "x-deprecated": true,
+          "x-deprecatedMessage": "Use Side instead",
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/definitions/EnumAppSide"
+            }
+          ]
+        }
+      }
+    },
+    "EnumJsonPatchOp": {
+      "type": "string",
+      "description": "JSON patching operation to be performed.\n\nReference: https://datatracker.ietf.org/doc/html/rfc6902#section-4\n\nNote: AddMerge is a non-standard patching operation.",
+      "x-enumNames": [
+        "Add",
+        "AddMerge",
+        "Remove",
+        "Replace",
+        "Copy",
+        "Move"
+      ],
+      "enum": [
+        "add",
+        "addmerge",
+        "remove",
+        "replace",
+        "copy",
+        "move"
+      ]
+    },
+    "PatchModDependence": {
+      "type": "object",
+      "properties": {
+        "modid": {
+          "type": "string",
+          "description": "The mod id (domain) of the mod this patch depends on. For example \"myexamplemod\"."
+        },
+        "invert": {
+          "type": "boolean",
+          "description": "If true, the patch will ONLY be applied if the mod is not present. (optional)"
+        }
+      }
+    },
+    "EnumAppSide": {
+      "type": "string",
+      "description": "Game parsing is not case-sensitive:\ne.g.'server' is often the standard but 'Server' is valid for parsing and is what vanilla patches use.",
+      "x-enumFlags": true,
+      "x-enumNames": [
+        "Server",
+        "Client",
+        "Universal"
+      ],
+      "enum": [
+        "server",
+        "client",
+        "universal",
+        "Server",
+        "Client",
+        "Universal"
+      ]
+    },
+    "PatchCondition": {
+      "type": "object",
+      "properties": {
+        "when": {
+          "type": "string"
+        },
+        "isValue": {
+          "type": "string"
+        },
+        "useValue": {
+          "type": "boolean"
+        }
+      }
+    },
+    "JsonObject": {
+      "type": "object",
+      "description": "Elegant, yet somewhat inefficently designed (because wasteful with heap objects) wrapper class to abstract away the type-casting nightmare of JToken O.O",
+      "properties": {
+        "exists": {
+          "type": "boolean",
+          "description": "True if the token is not null"
+        },
+        "token": {}
+      }
+    }
+  }
+}
