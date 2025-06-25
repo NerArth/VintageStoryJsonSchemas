@@ -11,7 +11,7 @@
       "fileMatch": [
         "**/modinfo.json"
       ],
-      "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets-generated-from-code/modinfo.json"
+      "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets/modinfo.json"
     },
     {
         "name": "patches.json",
@@ -19,7 +19,7 @@
         "fileMatch": [
             "**/patches/**/*.json"
         ],
-        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets-generated-from-code/patches.json"
+        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets/patches.json"
     },
     {
         "name": "blocktypes.json",
@@ -27,7 +27,7 @@
         "fileMatch": [
             "**/blocktypes/**/*.json"
         ],
-        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets-generated-from-code/blocktypes.json"
+        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets/blocktypes.json"
     },
     {
         "name": "itemtypes.json",
@@ -35,7 +35,7 @@
         "fileMatch": [
             "**/itemtypes/**/*.json"
         ],
-        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets-generated-from-code/itemtypes.json"
+        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets/itemtypes.json"
     },
     {
         "name": "alloy.json",
@@ -43,7 +43,7 @@
         "fileMatch": [
             "**/recipes/alloy/**/*.json"
         ],
-        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets-generated-from-code/recipes/alloy.json"
+        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets/recipes/alloy.json"
     },
     {
         "name": "barrel.json",
@@ -51,7 +51,7 @@
         "fileMatch": [
             "**/recipes/barrel/**/*.json"
         ],
-        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets-generated-from-code/recipes/barrel.json"
+        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets/recipes/barrel.json"
     },
     {
         "name": "clayforming.json",
@@ -59,7 +59,7 @@
         "fileMatch": [
             "**/recipes/clayforming/**/*.json"
         ],
-        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets-generated-from-code/recipes/clayforming.json"
+        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets/recipes/clayforming.json"
     },
     {
         "name": "cooking.json",
@@ -67,7 +67,7 @@
         "fileMatch": [
             "**/recipes/cooking/**/*.json"
         ],
-        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets-generated-from-code/recipes/cooking.json"
+        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets/recipes/cooking.json"
     },
     {
         "name": "grid.json",
@@ -75,7 +75,7 @@
         "fileMatch": [
             "**/recipes/grid/**/*.json"
         ],
-        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets-generated-from-code/recipes/grid.json"
+        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets/recipes/grid.json"
     },
     {
         "name": "knapping.json",
@@ -83,7 +83,7 @@
         "fileMatch": [
             "**/recipes/knapping/**/*.json"
         ],
-        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets-generated-from-code/recipes/knapping.json"
+        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets/recipes/knapping.json"
     },
     {
         "name": "smithing.json",
@@ -91,7 +91,7 @@
         "fileMatch": [
             "**/recipes/smithing/**/*.json"
         ],
-        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets-generated-from-code/recipes/smithing.json"
+        "url": "https://raw.githubusercontent.com/NerArth/VintageStoryJsonSchemas/refs/heads/master/assets/recipes/smithing.json"
     }
   ]
 }
