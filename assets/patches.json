@@ -41,7 +41,14 @@
           "$ref": "#/definitions/PatchCondition"
         },
         "value": {
-          "$ref": "#/definitions/JsonObject"
+          "oneOf": [
+            {
+              "$ref": "#/definitions/JsonObject"
+            },
+            {
+              "type": "boolean"
+            }
+          ]
         },
         "sideType": {
           "x-deprecated": true,
