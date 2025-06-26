@@ -46,7 +46,9 @@
               "$ref": "#/definitions/JsonObject"
             },
             {
-              "type": "boolean"
+              "not": {
+                "type": "null"
+              }
             }
           ]
         },
